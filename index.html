@@ -9,7 +9,7 @@
   <meta name="description"
     content="Welcome to Gladys Ramos homepage.">
   <meta name="keywords"
-    content="Consulting,Freelance,Training,Data,Dataviz,Datavisualization,Plot,Chart,R,Python,">
+    content="Consulting,Freelance,Training,Data,Dataviz,Datavisualization,Plot,Chart,Graph,R,Python,Learning">
   <meta name="author" content="Gladys Ramos">
   <link rel="icon" href="img/logo/Home_single_small.png">
 
@@ -52,14 +52,17 @@
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="#">HOME</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#description">Intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#herramientas">Tech Stack</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -140,12 +143,14 @@
           </p>
 
           <a class="btn btn-secondary btn-l text-uppercase"
-            href="https://drive.google.com/file/d/11qleHp8CJvZHmOjiqQSyWOSEaVlVhC2T/view?usp=sharing"
+            href="https://drive.google.com/file/d/1fM5fvPIeW9nfZVnk5o3xGddf9GcvdsEd/view?usp=sharing" 
+            
             target="_blank">CV</a>
 
           <a class="btn btn-secondary btn-l text-uppercase" href="https://github.com/Glaramos"
             target="_blank">Github</a>
         </div>
+
         <!-- SECCION CURRICULUM -->
         <section id="curriculum" class="curriculum">
           <div class="contenido-seccion">
@@ -288,8 +293,16 @@
                     <div class="circulod"></div>
                   </div>
                 </div>
+                <div class="item der">
+                  <li>
+                    <h4>Python para Ciencia de Datos e Inteligencia Artificial</h4>Silicon Misiones
+                  </li>
+                  <span class="fecha">2025</span>
 
-
+                  <div class="conectord">
+                    <div class="circulod"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -299,7 +312,137 @@
 
   <!-- ======================================================================= -->
 
-  <!-- =======================  SERVICES SECTION ======================= -->
+
+  <!-- =======================  TECH STACK ======================= -->
+  <style>
+    .services-logo {
+      margin: 15px;
+      color: #69b3a2;
+      font-size: 45px;
+      padding: 30px;
+      border-radius: 50%;
+      border-color: black;
+      border-width: 5px;
+      border: solid;
+    }
+
+    .services-logo:hover {
+      color: white;
+      background-color: #69b3a2;
+    }
+  </style>
+
+  <section id="herramientas" class="bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center" style="padding-bottom: 2%">
+          <p style="display:inline; font-size: 35px">Tech Stack</p>
+          <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;">
+
+          <div style="display: flex; gap: 24px;">
+            <!-- First column -->
+            <div style="flex: 1;">
+              <img src="icons/sql.png" alt="SQL" width="100" style="vertical-align:middle;"> <strong>SQL</strong>
+              <p>Efficient management, querying, and analysis of relational databases.</p>
+
+              <img src="icons/python.png" alt="Python" width="75" style="vertical-align:middle;">
+              <strong>Python</strong>
+              <p>Process automation, data analysis, and development of custom scripts.</p>
+            </div>
+            <!-- Second column -->
+            <div style="flex: 1;">
+              <img src="icons/powerbi.png" alt="Power BI" width="75" style="vertical-align:middle;"> <strong>Power
+                BI</strong>
+              <p>Interactive data visualization and creation of dynamic dashboards.</p>
+              <img src="icons/excel.png" alt="Excel" width="75" style="vertical-align:middle;">
+              <strong>Excel</strong>
+              <p>Advanced data manipulation, modeling, and reporting.</p>
+            </div>
+            <!-- Third column -->
+            <div style="flex: 1;">
+              <img src="icons/tableau.png" alt="Tableau" width="150" style="vertical-align:middle;">
+              <strong>Tableau</strong>
+              <p>Development of intuitive visualizations and visual analysis of large data sets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================================= -->
+
+  <!-- ======================== PORTFOLIO SECTION ============================ -->
+
+
+  <style>
+    .explanation_portfolio {
+      font-size: 14px;
+      margin: 20px;
+    }
+  </style>
+
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">A glimpse of the projects I've been working on</h3>
+          <div id="portfolio-button-container">
+          </div>
+          <br>
+        </div>
+      </div>
+      <br><br>
+      <div id="portfolio-items" class="row">
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard ">
+          <a class="portfolio-link" data-toggle="modal" href="#ventas">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <hr>
+                <p>Dashboard ventas</p>
+                <hr>
+              </div>
+            </div>
+            <img src="img/portfolio/dashboardventas.png" width="280px"></img>
+          </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard ">
+          <a class="portfolio-link" data-toggle="modal" href="#servicios">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">               
+                <hr> 
+                <p>Servicio Atención al cliente</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/servicios.png" alt="">
+          </a>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6 portfolio-item show column dashboard ">
+          <a class="portfolio-link" data-toggle="modal" href="#recursosH">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <hr>
+                <p>Recursos Humanos</p>
+                <hr>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/RRHH.png" alt="">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--SECCION SERVICE-->
   <style>
     .services-logo {
       margin: 15px;
@@ -356,107 +499,7 @@
       </div>
     </div>
   </section>
-
-
-
-  <!-- ======================================================================= -->
-
-  <!-- ======================== PORTFOLIO SECTION ============================ -->
-
-
-  <style>
-    .explanation_portfolio {
-      font-size: 14px;
-      margin: 20px;
-    }
-  </style>
-
-  <section class="bg-light" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">A glimpse of the projects I've been working on</h3>
-          <div id="portfolio-button-container">
-          </div>
-          <br>
-        </div>
-      </div>
-      <br><br>
-      <div id="portfolio-items" class="row">
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard ">
-          <a class="portfolio-link" data-toggle="modal" href="#ventas">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <hr>
-                <p>Dashboard ventas</p>
-                <hr>
-              </div>
-            </div>
-            <img src="img/portfolio/dashboardventas.png" width="280px"></img>
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dataviz dashboard ">
-          <a class="portfolio-link" data-toggle="modal" href="#servicios">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <p>Servicio Atención al cliente</p>
-                <hr>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/servicios.png" alt="">
-          </a>
-        </div>
-
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column dashboard ">
-          <a class="portfolio-link" data-toggle="modal" href="#recursosH">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <hr>
-                <p>Recursos Humanos</p>
-                <hr>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/RRHH.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 portfolio-item show column paper dashboard">
-          <a class="portfolio-link" data-toggle="modal" href="#financiero">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <hr>
-                <p>Financiero</p>
-                <hr>
-
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/Financiero.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6 portfolio-item show column paper dashboard">
-          <a class="portfolio-link" data-toggle="modal" href="#accidente">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <hr>
-                <p>Car accident</p>
-                <hr>
-
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/accidente de transito.jpg" alt="">
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
+  <!--FIN DE SECCION SERVICE-->
 
   <!-- ======================= CONTACT SECTION =============================== -->
 
@@ -493,7 +536,6 @@
 
   <!-- ======================= FOOTER SECTION ================================ -->
   <footer>
-
     <a href="#page-top" class="page-top">
       <i class="fa-solid fa-angles-up"></i>
     </a>
@@ -588,10 +630,15 @@
                       transactions. Each entry in the dataset represents a unique transaction, with valuable information
                       about products, customers, and regions.</p>
 
-                    <h6>Read more</h6>
-                    
-                    <span>The source code of the project are of course on <a href="https://github.com/Glaramos" target="_blank">Github</a></span>
-                    
+                    <center><a href="img/portfolio/dashboardventas.png" target="_blank"><img src="img/portfolio/dashboardventas.png"
+                          width="80%" target="_blank"></img></center>
+
+                    <hr>
+
+                    <span>The source code of the project are on <a href="https://github.com/Glaramos"
+                        target="_blank">Github</a></span>
+                    <p>This board was made in an online course, its data was provided by the teacher.</p>
+
                   </div>
                 </div>
               </div>
@@ -599,8 +646,6 @@
           </div>
         </div>
       </div>
-
-
 
   </center>
 
@@ -638,7 +683,8 @@
 
                     <hr>
 
-                    <span>The source code of the project are on <a href="https://github.com/Glaramos" target="_blank">Github</a></span>
+                    <span>The source code of the project are on <a href="https://github.com/Glaramos"
+                        target="_blank">Github</a></span>
                     <p>This board was made in an online course, its data was provided by the teacher.</p>
 
                   </div>
@@ -683,11 +729,12 @@
                       unemployment are 162 employees. The year in which the most employees were hired was between
                       2016-2018.
                     </p>
-                    <center><a href="img/portfolio/RRHH.png"><img src="img/portfolio/RRHH.png" width="80%"></img></a>
+                    <center><a href="img/portfolio/RRHH.png" target="_blank"><img src="img/portfolio/RRHH.png" width="80%" target="_blank"></img></a>
                     </center>
                     <h6>Read more</h6>
                     <hr>
-                    <span>See the associated <a href="https://github.com/Glaramos" target="_blank">github</a> for more information and
+                    <span>See the associated <a href="https://github.com/Glaramos" target="_blank">github</a> for more
+                      information and
                       source code of the project.</span>
                     <p>This board was made in an online course, its data was provided by the teacher.</p>
                     <br><br><br>
@@ -699,102 +746,6 @@
         </div>
       </div>
   </center>
-
-  <!-- Financiero -->
-  <center>
-    <div class="portfolio-modal modal fade" id="financiero" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog h-100">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 mx-auto">
-                <div class="modal-body">
-                  <img src="img/portfolio/Financiero.png" width="180px"></img>
-                  <p style="max-width: 600px">Financial analysis</p>
-                  <a style="margin-top: 0px" class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                    href="#">Online app</a>
-                  <br><br>
-                  <div style="text-align: left">
-                    <h6>Description</h6>
-                    <hr>
-                    <p>Main analysis of stores located in the city of Brazil.This analysis detailed period billing.The
-                      filter of the different products sold.
-                      .</p>
-                    <center><a href="img/portfolio/Financiero.png"><img src="img/portfolio/Financiero.png" width="80%">
-                    </center>
-                    <h6>Read more</h6>
-                    <hr>
-                    <span>See the associated <a href="https://github.com/Glaramos" target="_blank">github</a> for more
-                      information and source code of the project.</span>
-                    <p>This board was made in an online course, its data was provided by the teacher.</p>
-                    <br><br><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </center>
-
-  <!-- Accidente de transito -->
-  <center>
-    <div class="portfolio-modal modal fade" id="accidente" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog h-100">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 mx-auto">
-                <div class="modal-body">
-                  <img src="img/portfolio/accidente de transito.jpg" width="180px"></img>
-                  <p style="max-width: 600px">Car accident</p>
-                  <a style="margin-top: 0px" class="btn btn-secondary btn text-uppercase js-scroll-trigger"
-                    href="#">Online app</a>
-                  <br><br>
-                  <div style="text-align: left">
-                    <h6>Description</h6>
-                    <hr>
-                    <p>Creation of a board to explore the area with greater concentration of accidents.
-                      This project was carried out in the course.
-                      I detail the description of this project carried out in the area with the highest concentration of
-                      accidents.
-                      It is requested that an analysis of the important points be identified.
-                      Quantify the total events that occurred with hours, days of the week and season of the year.
-                      Collect the number of deaths and injured.
-                      Create a map with the geolocation of events.
-                      Evaluate which are the "7 best" causes of accidents.
-                      Quantify the actions in which a single accident records more than 3 victims.
-
-                      The board was created using Power BI. Interactive graphics and spectra packages to interact with
-                      the database. Here is a screenshot of the application welcome page:
-                      This information was provided and obtained by the course Via Online.</p>
-                    <center><a href="img/portfolio/accidente de transito.jpg"><img
-                          src="img/portfolio/accidente de transito.jpg" width="80%"></center>
-                    <h6>Read more</h6>
-                    <hr>
-                    <span>See the associated <a href="https://github.com/Glaramos" target="_blank">github</a> for more
-                      information and source code of the project.</span>
-                    <p>This board was made in an online course, its data was provided by the teacher.</p>
-                    <br><br><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </center>
-
 
 
 
